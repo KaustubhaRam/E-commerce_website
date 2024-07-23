@@ -29,6 +29,8 @@ nav ul li a {
 
 main {
     padding: 1rem;
+    position: relative;
+    min-height: 80vh;
 }
 
 footer {
@@ -55,4 +57,30 @@ footer {
 
 .product img, .cart-item img {
     max-width: 100%;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.clear-cart {
+    background-color: #d9534f;
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem 2rem;
+}
+
+.clear-cart:hover {
+    background-color: #c9302c;
 }
