@@ -1,112 +1,54 @@
+/* Global styles */
 body {
     font-family: Arial, sans-serif;
+  }
+  
+  nav ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
+  }
+  
+  nav li {
     display: inline;
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-main {
-    padding: 1rem;
-    max-width: 800px;
-    margin: 0 auto;
-    padding-bottom: 100px; /* Add padding to prevent overlap with footer */
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
-h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-ul {
-    list-style-type: disc;
-    padding-left: 2rem;
-}
-
-a {
-    color: #333;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-#featured-products, #product-list, #cart-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.product, .cart-item {
-    border: 1px solid #ddd;
-    padding: 1rem;
-    width: calc(33.333% - 2rem);
-}
-
-.product img, .cart-item img {
-    max-width: 100%;
-}
-
-button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    margin-top: 0.5rem;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-.clear-cart {
-    background-color: #d9534f;
-    position: fixed;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 1rem 2rem;
-    z-index: 1000;
-}
-
-.clear-cart:hover {
-    background-color: #c9302c;
-}
+    margin-right: 10px;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  /* Product page specific styles */
+  #product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .product-card {
+    background-color: #f4f4f4;
+    padding: 10px;
+  }
+  
+  .product-card h2 {
+    margin-top: 0;
+  }
+  
+  .product-card p {
+    margin-bottom: 10px;
+  }
+  
+  /* Cart page specific styles */
+  #cart-items {
+    margin-bottom: 10px;
+  }
+  
+  #checkout-btn {
+    display: block;
+    margin: 10px 0;
+  }
+  
