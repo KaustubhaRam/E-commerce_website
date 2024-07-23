@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>E-Commerce Website - Products</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="cart.html">Shopping Cart</a></li>
-    </ul>
-  </nav>
-  <section>
-    <h1>Our Products</h1>
-    <div id="product-list"></div>
-  </section>
-  <script src="script.js"></script>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Products</h1>
+        <div class="product-grid" id="product-grid">
+            <!-- Products will be dynamically loaded here -->
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
