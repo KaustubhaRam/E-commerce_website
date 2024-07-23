@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             clearCartButton.textContent = 'Clear Cart';
             clearCartButton.classList.add('clear-cart');
             clearCartButton.onclick = clearCart;
-            container.appendChild(clearCartButton);
+            document.body.appendChild(clearCartButton);  // Append the button to the body to ensure it's always fixed
         }
     }
 
