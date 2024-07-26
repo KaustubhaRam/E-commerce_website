@@ -3,6 +3,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -10,6 +13,15 @@ header {
   color: #fff;
   padding: 1rem;
   text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+nav {
+  margin-top: 1rem;
 }
 
 nav a {
@@ -20,12 +32,26 @@ nav a {
 
 main {
   padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
 }
 
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  flex-grow: 1;
 }
 
 .product, .cart-item {
@@ -35,8 +61,10 @@ main {
 }
 
 .product img, .cart-item img {
-  max-width: 100%;
-  height: auto;
+  width: 200px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  object-fit: cover; /* Ensures the image covers the entire box without distortion */
+  border-radius: 8px; /* Optional: adds rounded corners */
 }
 
 button {
@@ -45,6 +73,7 @@ button {
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 button:hover {
@@ -60,4 +89,34 @@ button:hover {
 
 .quantity button {
   margin: 0 0.5rem;
+}
+
+.dropdown-container {
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  appearance: none;
+  cursor: pointer;
+}
+
+select:focus {
+  border-color: #28a745;
+  outline: none;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+select option {
+  padding: 0.5rem;
 }
