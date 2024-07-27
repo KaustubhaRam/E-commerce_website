@@ -26,7 +26,7 @@ const products = [
     productGrid.innerHTML = '';
   
     products.forEach(product => {
-      const productElement = document.createElement('div')
+      const productElement = document.createElement('div');
       productElement.classList.add('product');
       productElement.innerHTML = `
         <img src="${product.image}" alt="${product.name}">
