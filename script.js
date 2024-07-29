@@ -32,7 +32,7 @@ const products = [
         <img src="${product.image}" alt="${product.name}">
         <h2>${product.name}</h2>
         <p>Rs. ${product.price.toFixed(2)}</p>
-        <button onclick="addToCart(${product.id})">Add to Cart</button>
+        <button onclick="addToCart(${product.id})">Add to Cart</button
       `;
       productGrid.appendChild(productElement);
     });
